@@ -70,7 +70,12 @@ EXPOSE 4200
 CMD [ cd /src/app | npm start ]
 
 ```
-
+```
+docker build -t node-web-app .
+```
+```
+docker run -p 4200:4200 -d node-web-app
+```
 ## Built With
 
 
