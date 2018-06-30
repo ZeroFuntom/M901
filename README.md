@@ -54,8 +54,22 @@ Give an example
 ```
 
 ## Deployment
+```
+FROM node:8
 
+# Create app directory
+WORKDIR /Users/Data/M901/src/client/
 
+COPY shop ./
+
+RUN npm config set registry http://registry.npmjs.org/
+RUN npm install
+
+EXPOSE 4200
+
+CMD [ cd /src/app | npm start ]
+
+```
 
 ## Built With
 
