@@ -20,15 +20,20 @@ Give examples
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs	
 ```
-
-And repeat
-
+```
+git clone https://github.com/ZeroFuntom/M901.git
+```
+```
+sudo chmod -R 777 M901
+cd ~/M901/src/client/shop
+npm install
+cd src/app
+npm start
+```
 ```
 until finished
 ```
