@@ -90,18 +90,18 @@ SHELL
 ```
 ## Built With
 
-
+Benutzte Plattform: nodejs und Vagrant
 
 ## Contributing
 
 
 
 ## Versioning
-
+1.0
 
 
 ## Authors
-
+Tim Rhomberg und Cassandra
 
 ## License
 
