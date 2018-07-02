@@ -1,6 +1,6 @@
 # M901
 
-Unsere Applikation ist ...
+Unsere Applikation ist ein Web Shop
 # Project Title
 
 One Paragraph of project description goes here
@@ -54,6 +54,7 @@ Give an example
 ```
 
 ## Deployment
+Dockerfile
 ```
 FROM node:8
 
@@ -70,11 +71,21 @@ EXPOSE 4200
 CMD [ cd /src/app | npm start ]
 
 ```
+Image wird erstellt.
 ```
 docker build -t node-web-app .
 ```
+Container wird erstellt und gestartet
 ```
 docker run -p 4200:4200 -d node-web-app
+```
+Auf den Container verbinden.
+```
+docker exec -it 1551cea5029c /bin/bash
+```
+Überprüfen ob der Webshop funktioniert.
+```
+curl localhost:4200
 ```
 ## Built With
 
